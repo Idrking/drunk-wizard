@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	let word = 'duck';
+	async function getWords() {
+		const response = await fetch('http://localhost:5173/api/generate', { method: 'GET' });
+		return await response.json();
+	}
+
+	getWords().then((res) => {
+		word = res.data;
+	});
+</script>
+
+<h1>{word}</h1>
+
+<style>
+	h1 {
+		font-size: 4rem;
+		color: deeppink;
+	}
+</style>
