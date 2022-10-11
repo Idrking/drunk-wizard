@@ -10,7 +10,6 @@
 	});
 
 	async function newWord() {
-		console.log('running');
 		const newWord = await getWords();
 		word = newWord.data;
 	}
