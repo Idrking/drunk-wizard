@@ -1,14 +1,10 @@
-import { error, json } from '@sveltejs/kit';
-import { NINJA_API_KEY } from '$env/static/private';
+import { json } from '@sveltejs/kit';
+import fetchWord from '$lib/server/fetchWord';
+import fetchName from '../../../lib/server/fetchName';
 
 export async function GET() {
-	let res = await fetch('https://api.api-ninjas.com/v1/randomword', {
-		method: 'GET',
-		headers: { 'X-API-KEY': NINJA_API_KEY },
-		contentType: 'application/json'
-	});
+	let res = await fetchWord('verb');
+	let nothing = await fetchName();
 
-	res = await res.json();
-
-	return json({ data: res.word });
+	return json({ data: res, name: nothing });
 }
