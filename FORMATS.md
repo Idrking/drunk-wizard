@@ -10,6 +10,16 @@
 8. [verb][noun] - _ie Throw Fire_
 9. [verb][adjective][noun] - _ie Throw Blue Fire_ 10.[verb][adverb][adjective][noun] - _ie Throw Very Blue Fire_ 11.[verb][possesive name]'s [noun] - _ie Throw Jim's Fire_
 
+## Final Formats
+
+1. [name\*][adjective*][noun][noun*] check
+2. [noun] / [noun] check
+3. [name\*][adjective*][noun] of [adjective\*][noun] check
+4. [name\*][adjective*][noun] of [adverb\*][verb]check
+5. Conjure [name*]{[adverb\*][adjective*]}[noun]
+6. Summon [name*]{[adverb\*][adjective*]}[noun]
+7. [verb][name*]{[adverb\*][adjective*]}[noun]
+
 ### Starts with [noun]
 
 Tree 1: [noun] -> [adjective][noun] -> [Possesive Names]'s [adjective][noun]

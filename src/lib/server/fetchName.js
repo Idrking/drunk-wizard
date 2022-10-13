@@ -11,5 +11,5 @@ export default async function fetchName() {
 
 	res = await res.json();
 
-	return res[Math.floor(Math.random() * 29)].name;
+	return res[Math.floor(Math.random() * 29)].name + "'s";
 }
