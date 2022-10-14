@@ -1,0 +1,23 @@
+html {
+	/* SPACING */
+	--spacing-xs: 4px;
+	--spacing-s: 8px;
+	--spacing-m: 16px;
+	--spacing-l: 24px;
+	--spacing-xl: 32px;
+	--spacing-xxl: 42px;
+	--spacing-max: 50px;
+
+	/* COLORS */
+
+	--background: #fef6e4;
+	--headline: #001858;
+	--paragraph: #172c66;
+	--button: #f582ae;
+	--buttonText: #001858;
+	--stroke: #001858;
+	--main: #f3d2c1;
+	--highlight: #fef6e4;
+	--secondary: #8bd3dd;
+	--tertiary: #f582ae;
+}
