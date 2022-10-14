@@ -17,6 +17,7 @@
 
 <style>
 	h1 {
+		font-family: var(--subheader-font);
 		font-size: 4rem;
 		color: var(--orange-main);
 	}
