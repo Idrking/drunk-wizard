@@ -18,6 +18,6 @@
 </script>
 
 <MainHeader />
-<Github --size="200px" />
+<Github --size="200px" color="#f582ae" />
 <Wand --size="200px" />
 <Message --size="200px" />
