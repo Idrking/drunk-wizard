@@ -1,4 +1,9 @@
 <script>
+	import MainHeader from '$lib/components/MainHeader.svelte';
+	import Github from '$lib/components/icons/Github.svelte';
+	import Message from '$lib/components/icons/Message.svelte';
+	import Wand from '$lib/components/icons/Wand.svelte';
+
 	let word = '';
 	async function getWords() {
 		const response = await fetch('http://localhost:5173/api/generate', { method: 'GET' });
@@ -12,13 +17,7 @@
 	}
 </script>
 
-<h1>{word}</h1>
-<button on:click={newWord}>New Word!</button>
-
-<style>
-	h1 {
-		font-family: var(--subheader-font);
-		font-size: 4rem;
-		color: var(--orange-main);
-	}
-</style>
+<MainHeader />
+<Github --size="200px" />
+<Wand --size="200px" />
+<Message --size="200px" />
