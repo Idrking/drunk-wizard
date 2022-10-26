@@ -1,8 +1,6 @@
 <script>
 	import getWords from '$lib/getWords.js';
-	let spell = '';
-	let loading = false;
-
+	import LoadingSpinner from './LoadingSpinner.svelte';
 	let spellPromise;
 
 	async function handleClick() {
@@ -13,7 +11,7 @@
 <article>
 	{#if spellPromise}
 		{#await spellPromise}
-			<p>Loading</p>
+			<LoadingSpinner />
 		{:then spell}
 			<p>{spell}</p>
 		{/await}
@@ -27,8 +25,9 @@
 		color: white;
 		min-width: 50%;
 		max-width: max(80%, 400px);
+		min-height: 400px;
 		border-radius: var(--spacing-m);
-		padding: var(--spacing-s);
+		padding: var(--spacing-l);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
