@@ -1,6 +1,7 @@
 <script>
 	import getWords from '$lib/getWords.js';
 	import LoadingSpinner from './LoadingSpinner.svelte';
+	import Button from './Button.svelte';
 	let spellPromise;
 
 	async function handleClick() {
@@ -16,7 +17,7 @@
 			<p>{spell}</p>
 		{/await}
 	{/if}
-	<button on:click={handleClick}>Ham</button>
+	<Button click={handleClick}>Dogs</Button>
 </article>
 
 <style>
