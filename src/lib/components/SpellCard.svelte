@@ -8,16 +8,6 @@
 	async function handleClick() {
 		spellPromise = getWords();
 	}
-	// async function getWords() {
-	// 	const response = await fetch('http://localhost:5173/api/generate', { method: 'GET' });
-	// 	const data = await response.json();
-	// 	spell = data.spell;
-	// 	return;
-	// }
-	// async function newWord() {
-	// 	const newWord = await getWords();
-	// 	word = newWord.data;
-	// }
 </script>
 
 <article>
@@ -33,14 +23,22 @@
 
 <style>
 	article {
-		background-color: var(--tertiary);
-		min-width: 300px;
-		min-height: 300px;
+		background-color: var(--secondary);
+		color: white;
+		min-width: 50%;
+		max-width: max(80%, 400px);
 		border-radius: var(--spacing-m);
-		border: 8px solid var(--stroke);
 		padding: var(--spacing-s);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		align-items: center;
+		font-family: var(--header-font);
+		font-weight: 700;
+		text-transform: capitalize;
+		font-size: 3rem;
+		margin-top: var(--spacing-xxl);
+		box-shadow: var(--shadow-elevation-medium);
+		filter: drop-shadow(var(--shadow-elevation-high));
 	}
 </style>

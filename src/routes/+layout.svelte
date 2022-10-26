@@ -13,7 +13,7 @@
 		--header-font: 'Amatic SC', cursive;
 		--subheader-font: 'Pompiere', cursive;
 		--body-font: 'Chivo', sans-serif;
-		background-color: var(--background);
+		background-color: var(--background-three);
 	}
 
 	div {
@@ -23,15 +23,15 @@
 		flex-direction: column;
 		background: radial-gradient(
 				circle at 105% 130%,
-				var(--main) 0%,
-				var(--main) 49.99%,
+				var(--background) 0%,
+				var(--background) 49.99%,
 				transparent 50%,
 				transparent 100%
 			),
 			radial-gradient(
 				circle at 10% 80%,
-				var(--secondary) 0%,
-				var(--secondary) 49.99%,
+				var(--background-two) 0%,
+				var(--background-two) 49.99%,
 				transparent 50%,
 				transparent 100%
 			);
