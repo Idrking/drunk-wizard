@@ -49,6 +49,16 @@ const structures = [
 		{ wordType: 'adverb', optional: true, probability: 18 },
 		{ wordType: 'adjective', optional: true, probability: 9 },
 		{ wordType: 'noun', optional: false }
+	],
+	[
+		{ wordType: 'set', optional: false, word: 'Greater' },
+		{ wordType: 'adjective', optional: true, probability: 16 },
+		{ wordType: 'noun', optional: false }
+	],
+	[
+		{ wordType: 'set', optional: false, word: 'Lesser' },
+		{ wordType: 'adjective', optional: true, probability: 16 },
+		{ wordType: 'noun', optional: false }
 	]
 ];
 
