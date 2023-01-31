@@ -17,7 +17,7 @@
 			<p>{spell}</p>
 		{/await}
 	{/if}
-	<Button click={handleClick}>Dogs</Button>
+	<Button click={handleClick}>Generate New Spell</Button>
 </article>
 
 <style>
